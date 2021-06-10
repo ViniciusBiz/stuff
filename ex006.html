@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="=ie=edge"
+    <title>aula 10 - eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Verdana;
+            background: aquamarine;
+            color:black;
+            width: 250px;
+            height: 234px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clique()" onmouseenter="entrar()" onmouseout="sair()">
+        <!--quando eu clicar na minha div...-->
+        interação
+    </div>
+
+    <script>
+            var obj1 = document.querySelector('div#area')
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout', sair)
+        function clique(){
+            /* ...é criado um objeto chamado obj1 e ele vai ser 
+             uma ligação do objeto a dentro do JS com o elemento id=area dentro do html */
+            obj1.innerText = 'Clicou!' 
+            obj1.style.background = 'red'
+            // e /\ esse objeto vai mudar o conteúdo de obj, que por sua vez
+            // tem como parâmetro a div id "area" pra CLICOU
+        
+        }
+        function entrar(){
+            obj1.innerText = "entrou!"
+            obj1.style.background = 'fuchsia'
+        }
+        function sair(){
+            obj1.innerText = "saiu!"
+            obj1.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

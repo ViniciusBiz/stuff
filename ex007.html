@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar as parada</title>
+    <style>
+        #container{
+            
+        
+            background: gray;
+	    position: relative;
+	    height: 500px; width: 600px;
+	    left: 450px;
+	    top:5px;
+	    padding-right: 30px;
+	    border-radius: 60px 50px;
+        }
+        body {
+            font:normal 18pt Verdana;
+            background-color: brown;
+        }
+        input{
+            font:normal 16pt Verdana;
+            width: 80px;
+            text-align: center;
+            
+        }
+        div#res{
+            margin-top: 25px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="container"><h2>somando coisas</h2>
+    <input type="number" name="txtnum1" id="txtnum1">
+    <input type="number" name="txtnum2" id="txtnum2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id ="res">Resultado</div> </div>
+    <script>
+        function somar(){
+            var tnum1 = document.getElementById('txtnum1')
+            var tnum2 = document.querySelector('input#txtnum2')
+            var res = window.document.getElementById('res')
+            var n1 = Number.parseInt(tnum1.value)
+            var n2 = Number.parseInt(tnum2.value)
+            s = n1+n2
+            res.innerHTML = `a soma entre ${n1} e ${n2} dá <strong>${s}</strong>`
+        }
+    </script>
+    
+</body>
+</html>
