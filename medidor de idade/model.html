@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGEMETERBOT5000</title>
+    <link rel="stylesheet" href="estiloidade.css"
+</head>
+<body>
+    <header><h1>AGE METER BOT 5000</h1></header>
+<section>
+    <div>
+        <p>Ano de nascimento: 
+        <input type="number" name="txt_ano" id="txt_ano" min="0">
+        </p>
+
+        <p>Sexo:
+        <input type="radio" name="radio_sexo" id="masc" checked>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="radio_sexo" id="fem" >
+        <label for="fem">Feminino</label>
+        </p>
+
+        <p><input type="button" value="Verificar" onclick="concluir()"></p>
+    </div>
+
+    <div id="res">
+        Preencha os campos acima para ver o seu resultado
+    </div>
+</section>
+<footer>
+    <p>&copy; Vinícius Biz</p>
+</footer>
+<script src="script_idade.js"></script>
+</body>
+</html>
