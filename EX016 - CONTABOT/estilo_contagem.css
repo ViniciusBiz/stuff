@@ -1,0 +1,34 @@
+
+@font-face {
+    font-family: system;
+    font-style: normal;
+    src: local("system.ttf")
+}
+
+body {
+background: rgb(105, 58, 58);
+font: normal 13pt Arial;
+}
+
+header{
+color: rgb(35, 59, 95);
+text-align: center;
+font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+
+section{
+    background: rgb(141, 116, 115);
+    border-radius: 15px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow:2px 2px 2px 2px;
+
+}
+
+footer{
+color:white;
+text-align: center;
+font-style: unset;
+}
