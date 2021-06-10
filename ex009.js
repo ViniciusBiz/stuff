@@ -1,3 +1,4 @@
+/* script para testar estrutura de decisão simples*/
 var pais = 'Brasil'
 console.log(`morando em ${pais}`)
 if (pais !== 'Brasil'){
