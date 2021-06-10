@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            font: italic 24pt Verdana;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt("Qual é o seu nome?")
+        document.write(` <marquee> Saudações, <strong> ${nome}</strong>, seu nome tem ${nome.length} Letras. </marquee><br>`) 
+        // /\ escreva no documento(`seu nome tem ${quantidade de letras} letras)
+        document.write(` <marquee> Seu nome em maiúsculo é ${nome.toUpperCase()}. </marquee><br>`) 
+        // /\ escreva no documento(`eu nome em maiúsculo é ${nome.emmaiusculo})
+        document.write(` <marquee> Seu nome em minusculo é ${nome.toLowerCase()}. </marquee><br>`) 
+
+    </script>
+</body>
+</html>
